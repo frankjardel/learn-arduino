@@ -1,0 +1,69 @@
+Curso 01 - Arduino: Do zero ao jogo
+
+    1x Arduino Uno R3 com cabo USB
+    1x Protoboard
+    4x Resistores de 220 Ohm ou 330 Ohm
+    4x LEDs comuns 4mm (não precisam ser de auto-brilho)
+    4x botões de 2 ou 4 pinos
+
+    1x Potenciômetro 10k(opcional)
+    1x Resistor 1kOhm (opcional)
+    1x Motor DC (opcional)
+    1x Multímetro (opcional) 
+
+    Cabinhos de cores variadas (Fio Jumper para protoboard)
+        Azul (2 grandes, 1 pequeno)
+        Vermelho (2 grandes, 1 pequeno)
+        Amarelo (2 grandes, 1 pequeno)
+        Verde (2 grandes, 1 pequeno)
+        Preto (4 grandes, 4 pequenos)
+        Marrom (2 pequenos)
+        Cinza ou Branco (1 grande)
+
+Curso 02 - Arduino: Introdução a Robótica
+
+    1x Arduino Uno R3 com cabo USB
+    1x Kit de Chassi Braço Robótico Acrílico ou MDF
+    1x Protoboard
+    4x Micro Servo Motor 9g SG90
+    2x Joysticks Arduino 3 Eixos
+    8x Jumpers - Macho x Fêmea
+    14x Jumpers - Macho x Macho
+
+Curso 03 - Esp32: Detector de presença com Bluetooth Low Energy
+
+    1x NodeMcu Esp32
+    1x Qualquer dispositivo Bluetooth 
+
+Curso 04 - NodeMcu e Esp8266: Monte um brinquedo interativo para seu Pet
+
+    1x NodeMcu Esp8266
+    2x Servo Motor 9g SG90
+    1x Suporte para motores servo
+    1x Sensor PIR SR501
+    1x Sensor de Movimento/presença PIR (HC-SR501)
+    1x Módulo Laser Vermelho 5mw 650m
+    1x Protoboard
+    Jumpers 
+
+Curso 05 - NodeMcu e Esp8266: Medindo e publicando dados com MQTT
+
+    1x Módulo Wi-Fi ESP8266 NodeMCU
+    1x Raspberry Pi (opcional)
+    1x Display LCD Oled Module For Arduino 0.96
+    1x Protoboard
+    1x Sensor de temperatura e de umidade (DHT11 ou DHT22)
+    1x Resistor 4k7
+    8x jumpers Macho x Macho
+
+https://shopee.com.br/M%C3%B3dulo-Bluetooth-Hc-06-Rs232-Hc-06-Ardu%C3%ADno-Esp8266-i.356249600.6169151602?xptdk=890fa620-b275-4e27-9532-ce6930c32db5
+
+https://shopee.com.br/Micro-Servo-Motor-9g-Sg90-Com-Acess%C3%B3rios-i.356249600.7469168057?xptdk=73ee890f-79de-443d-a982-951f5d726ba9
+
+https://shopee.com.br/MODULO-JOYSTICK-ARDUINO-3-EIXOS-i.302344541.18315927313?xptdk=704d5bed-6ec8-4270-ba75-ca3e74213a6c
+
+https://shopee.com.br/Kit-Arduino-Braco-Robotico-Em-Mdf-i.429405966.11177451807?xptdk=69a2b288-41ff-4636-bca5-3548ca556e2a
+
+https://shopee.com.br/Kit-Esp-01-M%C3%B3dulo-Esp8266-Wifi-Esp01-Gravador-Usb-C%C3%B3digo-253--i.362820645.7578083696?xptdk=fe3ce4f4-cffd-4d6e-9ea7-ee018f48d7df
+
+https://shopee.com.br/M%C3%B3dulo-Display-Shield-LCD-1602-16x02-Keypad-bot%C3%B5es-para-Arduino-Compativel-UNO-e-Mega2560-LEIA-DESCRICAO-n%C3%A3o-encaixa-no-ESP32-Nodemcu-ESP8266-i.318953938.2953774803?xptdk=ac802ec2-2472-4d86-b786-9f8ed482280a
