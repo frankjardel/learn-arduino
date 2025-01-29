@@ -9,10 +9,17 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int stateButton;
-  stateButton = digitalRead(7);
-
-  digitalWrite(10, stateButton);
-  digitalWrite(9, !stateButton);
-  delay(500);
+  if (Serial.available()) {
+    int stateButton;
+    stateButton = digitalRead(7);
+  
+    //Serial.write(stateButton);
+    Serial.println(stateButton);
+  
+    digitalWrite(10, stateButton);
+    digitalWrite(9, !stateButton);
+    delay(500);
+  } else {
+    Serial.println(Serial.available());
+  }
 }

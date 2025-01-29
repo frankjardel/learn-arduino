@@ -1,6 +1,8 @@
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(9600);
   pinMode(10, OUTPUT); // pino 10 na placa
+  Serial.println("Hello World");
 }
 
 void loop() {
