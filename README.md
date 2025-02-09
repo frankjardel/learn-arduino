@@ -4,6 +4,10 @@
 
 <!-- ![circuit design Swanky Kieran-Densor - Tinkercad](https://github.com/user-attachments/assets/1c1271c0-b7fd-4c3f-b194-225c2a333d93) -->
 
+## How to use Arduino, without the Arduino
+
+https://www.tinkercad.com
+
 
 ## QT Creator
 
