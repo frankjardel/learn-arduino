@@ -19,3 +19,7 @@ https://www.tinkercad.com
 ### install serial port
 
 ~$ sudo apt-get install libqt5serialport5 libqt5serialport5-dev
+
+### If has a problem with port permission
+
+~$ sudo chmod a+rw /dev/ttyACM0

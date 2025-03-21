@@ -3,15 +3,12 @@
 #include <Keyboard.h>
 #include <Mouse.h>
 
-const int button = 2;
-
 // Joystick
-const int R3 = 3;
-const int pinX = A0, pinY = A1, pinZ = A2;
+const int R3 = 2;
+const int pinX = A0, pinY = A1;
 
 void setup() {
-  pinMode(button, INPUT);
-  pinMode(R3, INPUT);
+  pinMode(R3, INPUT_PULLUP);
   
   Keyboard.begin();
   Mouse.begin();
@@ -24,23 +21,8 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(button) == 1) {
-    Keyboard.press(' ');
-  } else {
-    Keyboard.release(' ');
-  }
-
-  // Joystick
-  if (digitalRead(R3) == 1) {
-    Serial.println("R3 Pressed");
-    //Keyboard.press('r');
-  } else {
-    //Keyboard.release('r');
-  }
- 
   int x = analogRead(pinX);
   int y = analogRead(pinY);
-  int z = analogRead(pinZ);
 
   if (x <= 100) {
     Serial.println("x <= 100");
@@ -67,8 +49,11 @@ void loop() {
   } else {
     Keyboard.release('s');
   }
-
-  if (z == 0) {
+  
+  if (digitalRead(R3) == 0) {
     Serial.println("R3 Pressed");
+    //Keyboard.press('r');
+  } else {
+    //Keyboard.release('r');
   }
 }
