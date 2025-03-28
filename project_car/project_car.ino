@@ -33,37 +33,38 @@ void loop() {
   int x = analogRead(pinX);
   int y = analogRead(pinY);
 
-  if (x <= 100) {
-    Serial.println("front");
-    digitalWrite(pin10, HIGH);
-    digitalWrite(pin5, HIGH);
-  } else {
+  if (digitalRead(L3) == 0) {
+    // break
     digitalWrite(pin10, LOW);
     digitalWrite(pin5, LOW);
-  }
-  if (x >= 1000) {
-    Serial.println("back");
-    digitalWrite(pin9, HIGH);
-    digitalWrite(pin6, HIGH);
-  } else {
     digitalWrite(pin9, LOW);
     digitalWrite(pin6, LOW);
-  }
+  } else {
 
-  if (y <= 100) {
-    Serial.println("left");
-  } else {
-    //Serial.println("y");
-  }
-  if (y >= 1000) {
-    Serial.println("right");
-  } else {
-    //Serial.println("y");
-  }
+     if (y < 512) {
+        left  = 100;
+        right = map(y, 511, 0, 100, 0); 
+     } else {
+        left  = map(y, 512, 1023, 100, 0);
+        right = 100;       
+     }
 
-  if (digitalRead(L3) == 0) {
-    Serial.println("L3 pressed");
-  } else {
-    //Serial.println("L3 unpressed");
+     if (x < 512) {
+        int velocity = map(x, 511, 0, 0, 255);
+
+        analogWrite(pin9, 0);
+        analogWrite(pin10, velocity * right / 100);
+     
+        analogWrite(pin6, 0);
+        analogWrite(pin5, velocity * left / 100); 
+     } else {
+        int velocity = map(x, 512, 1023, 0, 255);
+
+        analogWrite(pin9, velocity * right / 100);
+        analogWrite(pin10, 0);
+     
+        analogWrite(pin6, velocity * left / 100);
+        analogWrite(pin5, 0);                         
+     }
   }
 }
