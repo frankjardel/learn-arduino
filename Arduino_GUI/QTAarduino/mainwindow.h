@@ -34,8 +34,8 @@ private:
 
     QSerialPort* arduino;
 
-    static const quint16 arduino_vendor_id = 6790;
-    static const quint16 arduino_product_id = 29987;
+    static const quint16 arduino_vendor_id = 9025;
+    static const quint16 arduino_product_id = 67;
 
     QString arduino_port_name;
     bool arduino_is_available;
